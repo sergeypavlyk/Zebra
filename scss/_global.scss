@@ -37,3 +37,11 @@
 :root{
     --myfont: 'HelveticaNeue', sans-serif; //font-family: var(--myfont);
 }
+
+.container{
+    width: 1023px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
