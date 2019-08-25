@@ -13,6 +13,15 @@ $(document).ready(function() {
     // },function(){
     //     $('.rightarrow_click').fadeOut(500);
     // });
+
+    $('.leftarrow_click').css('opacity', '0.5').fadeIn(500);
+    setTimeout(function(){ $(".leftarrow_click").css("opacity", ""); },600);
+
+    $('.rightarrow_click').css('opacity', '0.5').fadeIn(500);
+    setTimeout(function(){ $(".rightarrow_click").css("opacity", ""); },600);
+    
+
+    
     
     new WOW().init();
 });

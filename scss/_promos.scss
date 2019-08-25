@@ -14,6 +14,12 @@
             padding: 15px;
             text-transform: uppercase;
             font-family: var(--myfont);
+            transform: translateY(0%);
+            transition: transform 0.5s ease-out;
+            cursor: pointer;
+            &:hover{
+                transform: translateY(-10%);
+            }
             &:nth-child(1){
                 background-color: #58dbd3;
                 img{

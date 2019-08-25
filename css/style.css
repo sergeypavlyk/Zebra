@@ -156,7 +156,12 @@ header {
       position: relative;
       padding: 15px;
       text-transform: uppercase;
-      font-family: var(--myfont); }
+      font-family: var(--myfont);
+      transform: translateY(0%);
+      transition: transform 0.5s ease-out;
+      cursor: pointer; }
+      .promos .container .item:hover {
+        transform: translateY(-10%); }
       .promos .container .item:nth-child(1) {
         background-color: #58dbd3; }
         .promos .container .item:nth-child(1) img {
@@ -281,3 +286,11 @@ header {
     top: 120px;
     left: 50%;
     transform: translateX(-50%); }
+
+.levis {
+  height: 80vh;
+  background-color: #fff; }
+
+footer {
+  height: 10vh;
+  background-color: #1b2330; }
