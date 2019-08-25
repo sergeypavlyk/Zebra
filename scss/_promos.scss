@@ -1,0 +1,143 @@
+.promos{
+    height: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .item{
+            width: 244px;
+            height: 251px;
+            position: relative;
+            padding: 15px;
+            text-transform: uppercase;
+            font-family: var(--myfont);
+            &:nth-child(1){
+                background-color: #58dbd3;
+                img{
+                    position: absolute;
+                    right: 0;
+                    top: 2.5%;
+                }
+                p.top{
+                    font-size: 30px;
+                    color: #fff;
+                    font-weight: bold;
+                    padding-left: 7px;
+                }
+                .centertext{
+                    padding: 15px 0 15px 10px;
+                    color: #fff;
+                    font-weight: bold;
+                    span.h24px{
+                        font-size: 24px;
+                    }
+                    span.h22px{
+                        font-size: 22px;
+                    }
+                    span.h20px{
+                        font-size: 20px;
+                    }
+                    span.h18px{
+                        font-size: 18px;
+                    }
+                }
+                p.bottom{
+                    font-size: 49px;
+                    color: #12867f;
+                    font-weight: bold;
+                    padding-left: 15px;
+                    padding-bottom: 10px;
+                }
+            }
+            &:nth-child(2){
+                background-color: #e4ce9a;
+                img{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+                p.top{
+                    font-size: 30px;
+                    color: #fff;
+                    font-weight: bold;
+                    padding-left: 10px;
+                }
+                p.bottom{
+                    font-size: 49px;
+                    color: #5e4c38;
+                    font-weight: bold;
+                    padding-left: 12px;
+                    padding-bottom: 10px;
+                    padding-top: 57px;
+                }
+            }
+            &:nth-child(3){
+                background-color: #ffa7ce;
+                img{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                }
+                p.top{
+                    font-size: 30px;
+                    color: #ffffff;
+                    font-weight: bold;
+                    padding-left: 10px;
+                }
+                .centertext{
+                    padding-top: 3px;
+                    color: #fff;
+                    font-weight: bold;
+                    padding-left: 12px;
+                    span.h20px{
+                        font-size: 20px;
+                    }
+                    span.h18px{
+                        font-size: 18px;
+                    }
+                }
+                p.bottom{
+                    font-size: 49px;
+                    color: #414049;
+                    font-weight: bold;
+                    padding-left: 15px;
+                    padding-top: 10px;
+                }
+            }
+            &:nth-child(4){
+                background-color: #f2ca66;
+                padding: 13px;
+                p.top{
+                    font-size: 106px;
+                    color: #fff;
+                    font-weight: bold;
+                    transform: scale(1, -1);
+                    line-height: 106px;
+                }
+                p.center{
+                    font-size: 64px;
+                    color: #fff;
+                    font-weight: bold;
+                    padding-left: 40px;
+                }
+                .bottomtext{
+                    width: 142px;
+                    height: 37px;
+                    background-color: #ffffff;
+                    font-size: 26px;
+                    color: #f2ca66;
+                    font-weight: bold;
+                    text-align: center;
+                    padding-top: 3px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 15px;
+                    margin-left: -1px;
+                }
+            }
+        }
+    }
+}
