@@ -1,16 +1,13 @@
 .categories{
-    background-image: url(../background/banner2.png);
+    background-image: url(../background/catregories.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 90vh;
+    height: 800px;
     position: relative;
     overflow: hidden;
-    img{
-        width: 100%;
-        position: absolute;
-        bottom: 70px;
-        z-index: 50;
+    @media all and (max-width: 1366px){
+        height: 560px;
     }
     p{
         font-size: 116px;
@@ -19,8 +16,8 @@
         text-transform: uppercase;
         font-weight: 400;
         position: absolute;
-        top: 120px;
-        left: 50%;
+        top: 60px;
+        left: 49%;
         transform: translateX(-50%);
     }
 }

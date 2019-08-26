@@ -33,6 +33,10 @@
     src: url(../fonts/HelveticaNeue\Thin.ttf);
     font-weight: 100;
 }
+@font-face{
+    font-family: 'HelveticaCyr';
+    src: url(../fonts/HelveticaNeueCyr-Thin.ttf);
+}
 
 :root{
     --myfont: 'HelveticaNeue', sans-serif; //font-family: var(--myfont);

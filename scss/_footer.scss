@@ -1,4 +1,46 @@
 footer{
     height: 10vh;
     background-color: #1b2330;
+    .container{
+        padding: 16px 14px 20px 14px;
+        max-height: 10vh;
+        position: relative;
+    }
+    @media all and (max-width: 1366px){
+        height: 105px;
+    }
+    .logo{
+        text-transform: uppercase;
+        font-size: 38px;
+        font-family: var(--myfont);
+        font-weight: bold;
+        display: inline-block;
+        span.grey{
+            color: #626262;
+        }
+        span.blue{
+            color: #06b5a9;
+        }
+    }
+    .copyright{
+        font-size: 16px;
+        color: #ffffff;
+        font-family: var(--myfont);
+        color: #626262;
+        line-height: 28px;
+        font-weight: 500;
+        display: block;
+    }
+    .socials{
+       display: inline;
+       position: absolute;
+       right: 15px;
+       img{
+           padding-left: 35px;
+           padding-top: 10px;
+           &:first-child{
+               padding-left: 40px;
+           }
+       }
+    }
 }

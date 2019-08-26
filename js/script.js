@@ -20,7 +20,13 @@ $(document).ready(function() {
     $('.rightarrow_click').css('opacity', '0.5').fadeIn(500);
     setTimeout(function(){ $(".rightarrow_click").css("opacity", ""); },600);
     
-
+    $('.window').mouseenter(function(){
+        $(this).parent().siblings().children().removeClass('active');
+        $(this).addClass('active');
+    })
+    $('window').mouseleave(function(){
+        
+    })
     
     
     new WOW().init();

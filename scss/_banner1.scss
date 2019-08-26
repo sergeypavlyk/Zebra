@@ -6,6 +6,9 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    @media all and (max-width: 1290px){
+        height: 655px;
+    }
     .filter{
         opacity: 0.3607843137254902;
         background-color: #06b5a9;
@@ -14,20 +17,20 @@
     }
     .leftarrow, .rightarrow{
         position: absolute;
-        top: 60%;
+        top: 61%;
         transform: translateY(-50%);
         width: 10%;
         height: 50%;
         img.left{
             position: absolute;
             top: 50%;
-            left: 0;
+            left: 15%;
             transform: translateY(-50%);
         }
         img.right{
             position: absolute;
             top: 50%;
-            right: 0;
+            right: 10%;
             transform: translateY(-50%);
         }
     }
@@ -79,12 +82,13 @@
         text-align: center;
         p:nth-child(1){
             font-size: 22px;
-            letter-spacing: 29px;
+            letter-spacing: 30px;
+            padding-top: 5px;
             line-height: 20px;
             color: #ffffff;
             font-family: var(--myfont);
             text-transform: uppercase;
-            padding-left: 25px;
+            padding-left: 20px;
             text-shadow: 1px 1px 1px grey;
         }
         p:nth-child(2){
