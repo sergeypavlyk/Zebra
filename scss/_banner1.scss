@@ -3,12 +3,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 655px;
     position: relative;
     overflow: hidden;
-    @media all and (max-width: 1290px){
-        height: 655px;
-    }
     .filter{
         opacity: 0.3607843137254902;
         background-color: #06b5a9;

@@ -50,3 +50,17 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+
+#scroller{
+    position: fixed;
+    bottom: 15%;
+    right: 6%;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s;
+    &:hover{
+        opacity: .5;
+    }
+}
+

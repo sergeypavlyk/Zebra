@@ -1,18 +1,5 @@
 $(document).ready(function() {
     
-    
-
-    // $('.leftarrow').hover(function() {
-    //     $('.leftarrow_click').addClass('active').fadeIn(500);
-    //     event.stopPropagation();
-    // },function(){
-    //     $('.leftarrow_click').fadeOut(500);
-    // });
-    // $('.rightarrow').hover(function() {
-    //     $('.rightarrow_click').addClass('active').fadeIn(500);
-    // },function(){
-    //     $('.rightarrow_click').fadeOut(500);
-    // });
 
     $('.leftarrow_click').css('opacity', '0.5').fadeIn(500);
     setTimeout(function(){ $(".leftarrow_click").css("opacity", ""); },600);
@@ -24,9 +11,29 @@ $(document).ready(function() {
         $(this).parent().siblings().children().removeClass('active');
         $(this).addClass('active');
     })
-    $('window').mouseleave(function(){
-        
-    })
+    
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1400) {
+            $('#scroller').fadeIn(500);
+        } else {
+            $('#scroller').fadeOut();
+        }
+    });
+    $('#scroller').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+
+    $('.logo').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+    
     
     
     new WOW().init();
