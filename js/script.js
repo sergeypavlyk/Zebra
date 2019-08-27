@@ -34,6 +34,9 @@ $(document).ready(function() {
         return false;
     });
     
+
+    setTimeout(function(){ $('#scrolltobottom').css('opacity', '0.8').fadeIn(600); },1500);
+    setTimeout(function(){ $("#scrolltobottom").css("opacity", "").fadeOut(600); },3000);
     
     
     new WOW().init();

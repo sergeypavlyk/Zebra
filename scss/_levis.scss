@@ -15,14 +15,15 @@
             margin-left: 6px;
         }
         img.master{
-            position: absolute;
-            top: 20px;
-            right: -57px;
+            display: inline-block;
+            margin-left: 57%;
+            margin-top: 2%;
         }
         .iteminfo{
             padding: 50px;
             position: absolute;
             margin-top: 147px;
+            display: inline-block;
             p.name{
                 font-size: 50px;
                 color: #1d1d1d;
