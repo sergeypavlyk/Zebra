@@ -41,7 +41,8 @@
   --myfont: 'HelveticaNeue', sans-serif; }
 
 .container {
-  width: 1023px;
+  max-width: 1023px;
+  width: 100%;
   margin: 0 auto; }
 
 * {
@@ -64,20 +65,20 @@ header {
   left: 0;
   right: 0;
   height: 86px;
-  width: 100%;
+  width: 100vw;
   box-shadow: 1.5px 2.598px 3px rgba(0, 0, 0, 0.31);
   background-color: #fff;
   opacity: 0.9;
-  z-index: 10;
-  padding: 22px 0; }
+  z-index: 10; }
   header .logo {
     text-transform: uppercase;
     font-size: 38px;
     font-family: var(--myfont);
     font-weight: bold;
     display: inline-block;
-    padding-left: 12px;
-    display: inline-block; }
+    padding-left: 17px;
+    display: inline-block;
+    padding-top: 22px; }
     header .logo span.grey {
       color: #626262; }
     header .logo span.blue {
@@ -88,23 +89,60 @@ header {
       color: #626262; }
   header .container {
     display: flex;
-    justify-content: space-between; }
-  header .menu ul {
-    list-style: none;
-    padding-top: 14px; }
-    header .menu ul li {
-      display: inline;
-      font-size: 18px;
-      color: #626262;
-      font-family: var(--myfont);
-      font-weight: 500;
-      padding: 10px; }
+    justify-content: space-between;
+    height: 86px; }
+  header .menu {
+    width: 430px;
+    height: 100%;
+    margin-left: 15px; }
+    header .menu ul {
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      height: 100%; }
+      header .menu ul li {
+        display: inline-block;
+        font-size: 18px;
+        color: #626262;
+        font-family: var(--myfont);
+        font-weight: 500;
+        height: 100%;
+        padding: 20px;
+        padding-top: 36px;
+        transition: .5s;
+        cursor: pointer; }
+        header .menu ul li:hover {
+          color: #fff;
+          background-color: #cf1a2b; }
+        header .menu ul li:nth-child(1) {
+          padding-right: 18.5px; }
+        header .menu ul li:nth-child(2) {
+          padding-right: 16px; }
+        header .menu ul li:nth-child(3) {
+          padding-right: 24px; }
+  header .orders {
+    font-size: 24px;
+    color: #9d9d9d;
+    font-family: var(--myfont);
+    font-weight: 500;
+    padding-right: 25px;
+    padding-top: 31px; }
+    header .orders img:first-child {
+      margin-left: 5px;
+      display: inline-block; }
+    header .orders img:last-child {
+      margin-bottom: 2px;
+      margin-right: -3px;
+      display: inline-block; }
+    header .orders .text {
+      display: inline-block;
+      padding-right: 5px; }
 
 .banner1 {
   background-image: url(../background/banner1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
   height: 655px;
   position: relative;
   overflow: hidden; }
@@ -122,12 +160,12 @@ header {
     .banner1 .leftarrow img.left, .banner1 .rightarrow img.left {
       position: absolute;
       top: 50%;
-      left: 15%;
+      left: 18%;
       transform: translateY(-50%); }
     .banner1 .leftarrow img.right, .banner1 .rightarrow img.right {
       position: absolute;
       top: 50%;
-      right: 10%;
+      right: 9%;
       transform: translateY(-50%); }
   .banner1 .leftarrow {
     left: 2%; }
@@ -171,13 +209,13 @@ header {
     text-align: center; }
     .banner1 .introtext p:nth-child(1) {
       font-size: 22px;
-      letter-spacing: 30px;
-      padding-top: 5px;
+      letter-spacing: 31px;
+      padding-top: 8px;
       line-height: 20px;
       color: #ffffff;
       font-family: var(--myfont);
       text-transform: uppercase;
-      padding-left: 20px;
+      padding-left: 33px;
       text-shadow: 1px 1px 1px grey; }
     .banner1 .introtext p:nth-child(2) {
       font-size: 116px;
@@ -187,9 +225,9 @@ header {
       text-shadow: 1px 1px 2px grey; }
 
 .promos {
-  height: 337px;
+  height: 336px;
   display: flex;
-  width: 100%;
+  width: 100vw;
   flex-direction: column;
   justify-content: center; }
   .promos .container {
@@ -197,16 +235,16 @@ header {
     justify-content: space-between;
     padding-bottom: 10px; }
     .promos .container .item {
-      width: 244px;
-      height: 251px;
+      max-width: 244px;
+      width: 100%;
+      height: 250px;
       position: relative;
       padding: 15px;
       text-transform: uppercase;
       font-family: var(--myfont);
       transform: translateY(0%);
       transition: transform 0.5s ease-out;
-      margin-left: -2px;
-      margin-right: 2px;
+      margin-top: 2px;
       cursor: pointer; }
       .promos .container .item:hover {
         transform: translateY(-10%); }
@@ -226,10 +264,11 @@ header {
           color: #fff;
           font-weight: bold; }
           .promos .container .item:nth-child(1) .centertext span.h24px {
-            font-size: 24px; }
+            font-size: 24px;
+            padding-left: 2px; }
           .promos .container .item:nth-child(1) .centertext span.h22px {
             font-size: 22px;
-            line-height: 18px; }
+            line-height: 15px; }
           .promos .container .item:nth-child(1) .centertext span.h20px {
             font-size: 20px;
             line-height: 18px; }
@@ -240,9 +279,10 @@ header {
           font-size: 49px;
           color: #12867f;
           font-weight: bold;
-          padding-left: 13px;
-          padding-top: 5px; }
+          padding-left: 14px;
+          padding-top: 3px; }
       .promos .container .item:nth-child(2) {
+        margin-left: 2px;
         background-color: #e4ce9a; }
         .promos .container .item:nth-child(2) img {
           position: absolute;
@@ -253,14 +293,14 @@ header {
           color: #fff;
           font-weight: bold;
           padding-left: 15px;
-          line-height: 35px; }
+          line-height: 33px; }
         .promos .container .item:nth-child(2) p.bottom {
           font-size: 49px;
           color: #5e4c38;
           font-weight: bold;
           padding-left: 13px;
           padding-bottom: 10px;
-          padding-top: 57px; }
+          padding-top: 59px; }
       .promos .container .item:nth-child(3) {
         background-color: #ffa7ce; }
         .promos .container .item:nth-child(3) img {
@@ -272,9 +312,9 @@ header {
           color: #ffffff;
           font-weight: bold;
           padding-left: 16px;
-          line-height: 35px; }
+          line-height: 33px; }
         .promos .container .item:nth-child(3) .centertext {
-          padding-top: 3px;
+          padding-top: 6px;
           color: #fff;
           font-weight: bold;
           padding-left: 20px; }
@@ -297,13 +337,14 @@ header {
           color: #fff;
           font-weight: bold;
           transform: scale(1, -1);
-          line-height: 90px; }
+          line-height: 90px;
+          padding-left: 2px; }
         .promos .container .item:nth-child(4) p.center {
           font-size: 64px;
           color: #fff;
           font-weight: bold;
-          padding-left: 36px;
-          padding-top: 18px; }
+          padding-left: 39px;
+          padding-top: 17px; }
         .promos .container .item:nth-child(4) .bottomtext {
           width: 142px;
           height: 37px;
@@ -315,19 +356,19 @@ header {
           padding-top: 3px;
           position: absolute;
           left: 0;
-          bottom: 14px;
+          bottom: 13px;
           margin-left: -1px; }
 
 .categories {
   background-image: url(../background/catregories.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
   height: 800px;
   position: relative; }
   @media all and (max-width: 1366px) {
     .categories {
-      height: 560px; } }
+      height: 562px; } }
   .categories p {
     font-size: 116px;
     color: #fff;
@@ -335,8 +376,8 @@ header {
     text-transform: uppercase;
     font-weight: 400;
     position: absolute;
-    top: 60px;
-    left: 49%;
+    top: 50px;
+    left: 49.5%;
     transform: translateX(-50%); }
 
 .levis {
@@ -353,11 +394,11 @@ header {
     .levis .container img.logo {
       position: absolute;
       top: -17px;
-      margin-left: 2px; }
+      margin-left: 6px; }
     .levis .container img.master {
       position: absolute;
       top: 20px;
-      right: -55px; }
+      right: -57px; }
     .levis .container .iteminfo {
       padding: 50px;
       position: absolute;
@@ -366,10 +407,11 @@ header {
         font-size: 50px;
         color: #1d1d1d;
         font-family: var(--myfont);
-        font-weight: bold; }
+        font-weight: bold;
+        padding-left: 4px; }
       .levis .container .iteminfo p.description {
-        padding-left: 5px;
-        padding-top: 15px;
+        padding-left: 6px;
+        padding-top: 13px;
         font-size: 14px;
         line-height: 20px;
         color: #1d1d1d;
@@ -387,16 +429,16 @@ header {
         font-family: var(--myfont);
         font-weight: 500;
         position: absolute;
-        left: 4px;
-        top: 20px; }
+        left: 6px;
+        top: 24px; }
       .levis .container .iteminfo span.price {
         font-size: 36px;
         color: #1d1d1d;
         font-family: var(--myfont);
         font-weight: bold;
         position: absolute;
-        top: 21px;
-        left: 100px; }
+        top: 23px;
+        left: 103px; }
       .levis .container .iteminfo button {
         border: none;
         width: 215px;
@@ -409,20 +451,21 @@ header {
         padding-left: 4px;
         font-weight: 500;
         padding-bottom: 14px;
-        line-height: 25px;
+        line-height: 22px;
         position: absolute;
-        top: 11px;
-        right: 25px;
+        top: 13px;
+        right: 21.5px;
         cursor: pointer;
         transition: 0.5s; }
         .levis .container .iteminfo button img {
-          padding-right: 10px; }
+          padding-right: 12px; }
         .levis .container .iteminfo button:hover {
           opacity: .5; }
     .levis .container .models {
       position: absolute;
-      bottom: 63px;
-      width: 100%;
+      bottom: 62px;
+      left: 2.5px;
+      width: 100.5%;
       display: flex;
       justify-content: space-evenly; }
       .levis .container .models .window {
@@ -434,8 +477,6 @@ header {
         background-size: cover; }
         .levis .container .models .window.active {
           border: 1px solid red; }
-        .levis .container .models .window:nth-child(1) {
-          margin-left: 5px; }
       .levis .container .models p {
         text-align: center;
         font-family: var(--myfont);
@@ -446,7 +487,7 @@ header {
         margin-top: 12px; }
 
 footer {
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   background-color: #1b2330;
   overflow: hidden; }
@@ -461,7 +502,9 @@ footer {
     font-size: 38px;
     font-family: var(--myfont);
     font-weight: bold;
-    display: inline-block; }
+    display: inline-block;
+    padding-left: 2px;
+    padding-top: 2px; }
     footer .logo span.grey {
       color: #626262; }
     footer .logo span.blue {
@@ -471,9 +514,10 @@ footer {
     color: #ffffff;
     font-family: var(--myfont);
     color: #626262;
-    line-height: 28px;
+    line-height: 25px;
     font-weight: 500;
-    display: block; }
+    display: block;
+    padding-left: 3px; }
   footer .socials {
     display: inline;
     position: absolute;
@@ -482,4 +526,4 @@ footer {
       padding-left: 35px;
       padding-top: 10px; }
       footer .socials img:first-child {
-        padding-left: 40px; }
+        padding-left: 39px; }

@@ -2,11 +2,11 @@
     background-image: url(../background/catregories.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 800px;
     position: relative;
     @media all and (max-width: 1366px){
-        height: 560px;
+        height: 562px;
     }
     p{
         font-size: 116px;
@@ -15,8 +15,8 @@
         text-transform: uppercase;
         font-weight: 400;
         position: absolute;
-        top: 60px;
-        left: 49%;
+        top: 50px;
+        left: 49.5%;
         transform: translateX(-50%);
     }
 }
