@@ -44,7 +44,7 @@ header{
         margin-left: 22px;
         position: relative;
         .dropdown{
-            min-width: 606px;
+            min-width: 595px;
             height: 300px;
             background-color: #cf1a2b;
             position: absolute;
@@ -101,11 +101,12 @@ header{
                     font-weight: 500;
                     font-family: var(--myfont);
                     &:hover{
-                        opacity: .5;
+                        background-color: #fff;
+                        color: #cf1a2b;
                     }
                 }
                 a:first-child{
-                    padding-top: 28px;
+                    margin-top: 28px;
                 }
             }
             .right{
@@ -125,11 +126,12 @@ header{
                     font-weight: 500;
                     font-family: var(--myfont);
                     &:hover{
-                        color: #fff;
+                        background-color: #fff;
+                        color: #cf1a2b;
                     }
                 }
                 a:first-child{
-                    padding-top: 28px;
+                    margin-top: 28px;
                 }
             }
             
